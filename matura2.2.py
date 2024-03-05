@@ -21,9 +21,10 @@ def czy_mniejszy(n, s, k1, k2):
         return "NIE"
     
 
-slowa1 = open('Z:\Python\matura\DANE\DANE_M\slowa3.txt', 'r')
+with open('Z:\Python\matura\DANE\DANE_M\slowa3.txt', 'r') as slowa1:
+    read = slowa1.readlines()
 
-read = slowa1.readlines()
+
 pierwszy = int(read[0].strip())
 drugi = read[1].strip()
 sufiks1 = int(read[2].split()[0])
